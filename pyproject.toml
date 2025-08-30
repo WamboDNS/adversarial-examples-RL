@@ -1,0 +1,16 @@
+[project]
+name = "mnist-adversarial"
+description = "Distinguishing adversarial examples from normal MNIST digits and identifying the digit class."
+tags = ["single-turn", "test", "eval", "mnist", "adversarial-example"]
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "verifiers>=0.1.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = ["mnist_adversarial.py"]
